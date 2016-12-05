@@ -1,0 +1,19 @@
+<div class="jokes_container">
+
+    <div>
+      <%= link_to "New Joke", fetch_new_record_jokes_path, remote: true, method: :get %>
+    </div>
+
+    <div>
+      <%= link_to "Refresh", refresh_jokes_path, method: :get %>
+    </div>
+
+
+    <div>
+        <ul id="jokes-list">
+          <% @jokes.each do |joke| -%>
+              <%= render partial: "joke", locals: { joke: joke } %>
+          <% end -%>
+        </ul>
+    </div>
+</div>

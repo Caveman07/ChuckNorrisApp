@@ -7,8 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 collection = []
+
 File.readlines('public/facts.txt').map do |line|
-  collection << line
+  collection << line.tr("\n","")
 end
 
 collection.each do |line|

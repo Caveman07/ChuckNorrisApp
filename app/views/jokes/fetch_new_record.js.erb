@@ -1,0 +1,2 @@
+$("#jokes-list").prepend("<%= j (render partial: 'joke', locals: { joke: @random_joke } ) %>");
+$("#joke-id-<%= @random_joke.id %>").hide().fadeIn(900)
