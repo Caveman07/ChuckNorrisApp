@@ -1,11 +1,9 @@
 <div class="jokes_container">
 
-    <div>
-      <%= link_to "New Joke", fetch_new_record_jokes_path, remote: true, method: :get %>
-    </div>
+    <div class="manage-buttons">
+      <%= button_to "NEW JOKE", fetch_new_record_jokes_path, remote: true, method: :get,  :id => "btn-new-joke" %>
 
-    <div>
-      <%= link_to "Refresh", refresh_jokes_path, method: :get %>
+      <%= button_to "REFRESH", refresh_jokes_path, method: :get, :id => "btn-refresh" %>
     </div>
 
 

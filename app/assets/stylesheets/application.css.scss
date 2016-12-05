@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  background-image: image-url("chuck-norris_o_1405907.jpg");
+  font-family: 'Raleway', sans-serif;
+}
+
+.manage-buttons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.manage-btn {
+  -webkit-box-flex: 1 1 auto;
+  -moz-box-flex:  1 1 auto;
+  -webkit-flex:  1 1 auto;
+  -ms-flex:  1 1 auto;
+  flex:  1 1 auto;
+
+}
+
+#btn-new-joke {
+  margin-left: 40px;
+  border-radius: 5px;
+  border-color: blue;
+  margin-right: 5px;
+  height: 60px;
+  width: 150px;
+  background-color: #232ED1;
+  color: white;
+  font-size: 1.2em;
+}
+
+#btn-new-joke:focus {
+  outline: none;
+}
+
+#btn-new-joke:hover {
+  background-color: #182091;
+}
+
+#btn-refresh {
+  border-radius: 5px;
+  box-shadow: none;
+  border: 2px solid #232ED1;
+  height: 60px;
+  width: 150px;
+  background-color: white;
+  color: #232ED1;;
+  font-size: 1.2em;
+  font-weight: 500
+}
+
+#btn-refresh:focus {
+  outline: none;
+}
+
+#btn-refresh:hover {
+  background-color: #182091;
+  color: white;
+}
+
+#jokes-list {
+  list-style-type: none;
+}
+
+.joke-partial {
+  font-size: 1em;
+  background-color:white;
+}
