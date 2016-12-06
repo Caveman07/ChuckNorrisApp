@@ -1,6 +1,6 @@
 ##Генератор шуток Чака Норриса
 ![screenshot](app/assets/images/chuck-norris_o_1405907.jpg "Chuck")
-При нажатии new joke выдает случайную шутку про Чака Норриса.
+Шутки Чака Норриса в случайном порядке.
 
 ## Ruby version
 ruby 2.3.3p222
