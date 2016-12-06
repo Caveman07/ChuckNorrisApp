@@ -22,8 +22,7 @@ class JokesController < ApplicationController
     Joke.refresh_all
       respond_to do |format|
           format.html { redirect_to jokes_path, notice: 'refreshed' }
-        end
-
+      end
   end
 
 end

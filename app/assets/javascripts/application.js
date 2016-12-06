@@ -13,4 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jokes
 //= require_tree .
+
+$(document).ready(function(){
+  $("#jokes-list").bind("DOMSubtreeModified",function(){
+        $("li.joke-partial").removeClass("highlighted");
+        $("li.joke-partial").first().addClass("highlighted");
+    });
+});
